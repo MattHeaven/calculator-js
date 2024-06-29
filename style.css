@@ -25,7 +25,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    padding: 0 10px;
 }
 
 #form div input {
@@ -37,7 +37,17 @@
     border-radius: 16px;
     border: none;
     background: #e3f9ff;
+    cursor: pointer;
+}
 
+#form div:nth-child(6) {
+    display: flex;
+    flex-direction: row;
+    padding: 0 10px;
+}
+
+#equals {
+    flex-grow: 1;
 }
 
 #display {
