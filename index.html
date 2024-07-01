@@ -11,11 +11,11 @@
         <div class="calculator">
             <form id="form">
                 <div class="display">
-                    <input type="text" name="display" id="display" value="0">
+                    <input type="text" name="display" id="display" value="">
                 </div>
                 <div>
                     <input type="button" value="AC" onclick="display.value = ''">
-                    <input type="button" value="DEL" onclick="display.value = ''">
+                    <input type="button" value="DEL" onclick="display.value = display.value.toString().slice(0, -1)">
                     <input type="button" value="." onclick="display.value+= '.'">
                     <input type="button" value="/" onclick="display.value+= '/'">
                 </div>
